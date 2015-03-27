@@ -367,8 +367,9 @@ Custom content styles
 }
 
 .about h2 {
-    line-height: 125px;
-    height: 125px;
+    text-transform: lowercase;
+    line-height: 145px;
+    height: 145px;
     overflow: hidden;
     
     padding: 0 30px;
@@ -415,7 +416,7 @@ Custom content styles
 }
 
 .news h2 {
-    font-family: "Progreso", "Geogrotesque", Arial, sans-serif;
+    font-family: "My Custom Font", "Progreso", "Geogrotesque", sans-serif, Arial;
     font-size: 3.3em;
     font-weight: normal;
     text-transform: none;

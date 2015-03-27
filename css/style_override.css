@@ -1,13 +1,45 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url(../font/GeosansLight.ttf) format("truetype");
+}
+
 .home_body{
-    background-image: url(../index_files/index_img.jpg);
+    background-image: url(../img/index_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .about_body{
-    background-image: url(../about_files/about_img.jpg);
+    background-image: url(../img/about_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.kelly_bg{
+    /*background-image: url(../about_files/kelly.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: top right;*/
+    background-color: #fff;
+}
+
+.about_content{
+    background-color: #fff;
+    margin: 0px;
+    padding: 15px;
+    font-family: "My Custom Font";
+}
+
+.about h2{
+    font-family: "My Custom Font";
+}
+
+.travis_bg{
+    /*background-image: url(../about_files/travis.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;*/
+    background-color: #fff;
 }
