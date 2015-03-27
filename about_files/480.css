@@ -6,7 +6,7 @@ body {
 }
 
 body.home {
-    background: url(../img/bgs/home-smallscreen.jpg) no-repeat center center #000;
+    background: url(../about_files/about_img.jpg); no-repeat center center #000;
 }
 
 #container {
