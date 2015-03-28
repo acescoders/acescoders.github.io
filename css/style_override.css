@@ -81,13 +81,20 @@
 /* contact */
 
 .contact .col2 .clearfix{
-    background-color: #fff;
+    /*background-color: #fff;*/
     background-image: url(../img/bg-content.png);
     font-weight: 500;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
 
 .contact h2{
-    font-family: "Progreso";  
+    font-family: "Progreso";
+    background-color: transparent;
+}
+
+.distressed .content h2, .distressed .content h3, .distressed .content p, #latest-tweet p{
+    background-color: transparent;
 }
 
 .contact .col2 .col{
@@ -100,4 +107,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.col a img{
+    border-radius: 6px;
 }
