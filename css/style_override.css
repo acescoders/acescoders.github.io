@@ -1,10 +1,24 @@
 @font-face {
     font-family: "My Custom Font";
-    src: url(../font/GeosansLight.ttf) format("truetype");
+    src: url(../font/Economica-Regular-OTF.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Geogrotesque";
+    src: url(../font/geogtq-rg-webfont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Progreso";
+    src: url(../font/progreso-condensed-webfont.ttf) format("truetype");
 }
 
 .myFont{
-    font-family: "My Custom Font";
+    font-family: "Geogrotesque";
+}
+
+.myFont-header{
+    font-family: "Progreso";
 }
 
 /* HOME */
@@ -25,40 +39,53 @@
     background-attachment: fixed;
 }
 
-.about_content{
+.about .about_content{
     margin: 0px;
     padding: 15px;
-    font-family: "My Custom Font";
+    font-family: "Geogrotesque";
     font-size: 16px;
 }
 
-.col2 .col{
+.about .col2 .col{
     position: relative;
     width: 100%;
     /*background-color: rgba(255, 255, 255, 0.5);*/
     background-image: url(../img/bg-content.png);
     border-radius: 10px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
-.col h1{
+.about .col h1{
     font-size: 5em;
     text-transform: lowercase;
     margin: 0px;
     padding-left: 15px;
 }
 
-.col hr{
+.about .col hr{
     width: 95%;
     margin: auto;
     border-width: 2px;
     border-color: #000;
 }
 
+/* news */
 .article{
     text-align: center;
 }
 
 .article img{
     width: 50%;
+}
+
+/* contact */
+
+.contact .col2 .clearfix{
+    background-color: #fff;
+    background-image: url(../img/bg-content.png);
+    font-weight: 500;
+}
+
+.contact h2{
+    font-family: "Progreso";  
 }
