@@ -25,25 +25,6 @@
 <body class="folio">
 
    <div id="wrapper">
-    
-        <div id="slideshow-top"></div>
-
-        <!-- Slideshow navigation -->
-        <div id="navigation">
-            <div id="prev" class="slide-nav">
-                <a href="#" id="prevslide"><img src="folio_files/back_dull.png" alt="Previous"></a>
-            </div>
-            <div id="next" class="slide-nav">
-                <a href="#" id="nextslide"><img src="folio_files/forward_dull.png" alt="Next"></a>
-            </div>
-        </div>
-
-        <!-- Slideshow Bar-->
-        <div id="controls-wrapper">
-            <div id="controls">    
-               <div id="slidecaption"><h3>Seniors Week Poster<em>A3</em></h3>Printed by Mercury Walch.</div>
-            </div>
-        </div>
 
         <div id="container">
             <header>
@@ -61,7 +42,13 @@
             </header>
             
             <div id="main" role="main">  
-                <div id="content"></div>
+                <div id="content">
+                    <div class="news-articles">
+                        <div class="article">
+                                <div style="padding-left:50px;"><img src="img/coming-soon.png" alt="comming soon"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <footer></footer>
@@ -79,105 +66,6 @@
     
     <script src="js/jquery-ui-1.js"></script>
     <script src="js/jquery.js"></script>
-
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-
-            var slides = [
-                
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1748_for_website.jpg',
-                    title: '<h3>Seniors Week Poster<em>A3</em></h3>Printed by Mercury Walch.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1746_for_website.jpg',
-                    title: '<h3>Steamfest Identity and Flyer<em>DL </em></h3>Printed by Print Mail Logistics.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1734_for_website.jpg',
-                    title: '<h3>Volunteering Tasmania Annual Report<em>A5 perfect bound booklet</em></h3>Printed by Print Mail Logistics.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1713_for_website.jpg',
-                    title: '<h3>Mental Health Carers Tasmania Presentation Folders<em>A4 matt laminated</em></h3>Printed by Mercury Walch. Illustration by Dixie Designs.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1708_for_website.jpg',
-                    title: '<h3>Veranto Annual Report<em>Perfect bound, matt laminated</em></h3>Printed by Mercury Walch.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1688_for_website.jpg',
-                    title: '<h3>Tasmanian Museum and Art Gallery Presentation Folder<em>A4 matt laminated</em></h3>Printed by GEON.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/_DSC1677_for_website.jpg',
-                    title: '<h3>Asbestos Awareness for Workers Training Package<em>A4 folder and inserts</em></h3>Printed by Hero Print.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-2.jpg',
-                    title: '<h3>State of Volunteering Report: Tasmania 2010<em>A4 Book</em></h3>A report commissioned by Volunteering Tasmania. Printed by Print Mail Logistics.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-5.jpg',
-                    title: '<h3>Vintage Invitation<em>DL Flyer</em></h3>Invitation for Vintage fashion event. Printed by Foot and Playsted.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-16.jpg',
-                    title: '<h3>Volunteering Tasmania Annual Report<em>A5 Booklet</em></h3>Printed by Print Mail Logistics'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-17.jpg',
-                    title: '<h3>Gift Cards<em></em></h3>Gift cards for the Tasmanian Museum and Art Gallery, featuring collection items.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-18.jpg',
-                    title: '<h3>Wedding menu and placeholder<em>DL </em></h3>Printed by Print Mail Logistics.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-20.jpg',
-                    title: '<h3>ABC Weather Calendar<em>A4</em></h3>A calendar showcasing weather photos taken by everyday Tasmanians.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-19.jpg',
-                    title: '<h3>Norske Skog promotional brochure<em>A5 Booklet</em></h3>Printed on gloss with a gloss varnish.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-21.jpg',
-                    title: '<h3>The Craft of Adventure<em>Bookmark</em></h3>A promotional bookmark developed for The Craft of Adventure art exhibition.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-24.jpg',
-                    title: '<h3>Queenstown Heritage and Arts Festival Program<em>A5 Booklet</em></h3>'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-23.jpg',
-                    title: '<h3>Psychogeographers and Geo-parks<em>Bookmark</em></h3>Profiles of six Queenstown painters, printed with metallic ink.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-26.jpg',
-                    title: '<h3>Psychogeographers and Geo-parks<em>Book</em></h3>Profiles of six Queenstown painters, printed with metallic ink.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-27.jpg',
-                    title: '<h3>Queenstown Heritage and Arts Festival Program<em>A5 Booklet</em></h3>A full program for the two day festival designed by Travis.'
-                },
-                {
-                    image: 'http://www.pocopeople.com.au/img/folio/Product-28.jpg',
-                    title: '<h3>The Jewelled House of Art and Nature<em>Book</em></h3>The Mt Lyell Mining and Railway Company Office history, produced by Travis and printed on uncoated paper.'
-                }
-            ];
-        
-            $.supersized({
-                autoplay: 0,
-                transition: 1,
-                image_path: '/img/slideshow/',
-                slides: slides
-            });
-    
-        });
-    
-    </script>
     
     <script>
     var _gaq=[["_setAccount","UA-24268991-1"],["_trackPageview"]];
