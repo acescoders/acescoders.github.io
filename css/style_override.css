@@ -89,3 +89,7 @@
 .contact h2{
     font-family: "Progreso";  
 }
+
+.contact .col2 .col{
+    width: 46%;
+}
