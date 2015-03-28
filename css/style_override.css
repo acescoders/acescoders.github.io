@@ -1,13 +1,56 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url(../font/GeosansLight.ttf) format("truetype");
+}
+
+.myFont{
+    font-family: "My Custom Font";
+}
+
+/* HOME */
 .home_body{
-    background-image: url(../index_files/index_img.jpg);
+    background-image: url(../img/index_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
+/* ABOUT */ 
 .about_body{
-    background-image: url(../about_files/about_img.jpg);
+    background-image: url(../img/about_img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.about_content{
+    margin: 0px;
+    padding: 15px;
+    font-family: "My Custom Font";
+    font-size: 16px;
+}
+
+.col2 .col{
+    position: relative;
+    width: 100%;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+    background-image: url(../img/bg-content.png);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.col h1{
+    font-size: 5em;
+    text-transform: lowercase;
+    margin: 0px;
+    padding-left: 15px;
+}
+
+.col hr{
+    width: 95%;
+    margin: auto;
+    border-width: 2px;
+    border-color: #000;
 }
