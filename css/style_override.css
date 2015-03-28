@@ -93,3 +93,11 @@
 .contact .col2 .col{
     width: 46%;
 }
+
+.contact_body{
+    background-image: url(../img/contact_img.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
