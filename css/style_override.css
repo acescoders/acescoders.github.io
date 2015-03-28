@@ -13,6 +13,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden -moz-scrollbars-none;
 }
 
 /* ABOUT */ 
@@ -52,4 +53,12 @@
     margin: auto;
     border-width: 2px;
     border-color: #000;
+}
+
+.article{
+    text-align: center;
+}
+
+.article img{
+    width: 50%;
 }
