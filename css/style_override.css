@@ -25,16 +25,20 @@
 
 /* HOME */
 .home_body{
-    background-image: url(../img/about_img.jpg);
+   /* background-image: url(../img/about_img.jpg);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden -moz-scrollbars-none;
 }
 
+#main .index-img img{
+    width: 80%;
+}
+
 /* ABOUT */ 
 .about_body{
-    background-image: url(../img/about_img.jpg);
+    /*background-image: url(../img/about_img.jpg);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,7 +108,7 @@
 }
 
 .contact_body{
-    background-image: url(../img/contact_img.JPG);
+    /*background-image: url(../img/contact_img.JPG);*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
