@@ -225,3 +225,7 @@ span.sb-icon:before {
 .icon-download:before { content: '\41'; } /* 'A' */
 .icon-mobile:before { content: '\42'; } /* 'B' */
 .icon-camera:before { content: '\33'; } /* '3' */
+
+.logo-container img{
+    width: 350px;
+}
