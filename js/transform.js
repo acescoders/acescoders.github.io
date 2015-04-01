@@ -1,5 +1,5 @@
 $(function() {
-
+    var open = false;
     $( '#sb-container' ).swatchbook( {
         // number of degrees that is between each item
         angleInc : 15,
@@ -10,5 +10,34 @@ $(function() {
         // by default there is no such element
         closeIdx : 11
     } );
-
+    
+    $( '.dv-nav' ).click(function(){
+        /*$( '#sb-container' ).css("left","-43%");
+        $(".hideNav").fadeIn();
+        $( '#sb-container' ).delay(500).addClass("activeMenu");
+        $( '#sb-container' ).removeClass("inactiveMenu");
+        var pageTitle = $(this).parents(".mynav").attr("id")+".html";
+        $(".myLaoder").fadeIn().delay(200).fadeOut();
+        $("#mydiv").css("display","block");	
+        $("header").slideDown();
+        $("#myframe").removeClass("hidden").addClass("activeFrame");			
+        $("#myframe").attr("src", pageTitle);*/
+        if(open){
+            /*$('#sb-container').css("left","0%");
+            open = false;*/
+        }
+        else{
+            $('#sb-container').css("left","30%");
+            open = true;
+        }
+        /*var string = $.trim($(this).text());*/
+        
+    });
+    
+    $('.dv-home').click(function(){
+        if(open){
+            $('#sb-container').css("left","0%");
+            open = false;
+        }
+    });
 });
