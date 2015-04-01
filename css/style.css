@@ -262,3 +262,14 @@ span.sb-icon:before {
     /*display: none;   */
 }
 
+.section .text-content{
+    z-index: 100;   
+}
+
+.section .text-content p{
+    font-size: 11.4pt;
+    text-align: left;
+    overflow: hidden;
+    padding: 5px 20px;
+    /*display: none;*/
+}
