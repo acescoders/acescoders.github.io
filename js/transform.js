@@ -22,12 +22,14 @@ $(function() {
         $("header").slideDown();
         $("#myframe").removeClass("hidden").addClass("activeFrame");			
         $("#myframe").attr("src", pageTitle);*/
+        var left_dist = "+=300";
         if(open){
             /*$('#sb-container').css("left","0%");
             open = false;*/
         }
         else{
-            $('#sb-container').css("left","30%");
+            //$('#sb-container').css("left","30%");
+            $( '#sb-container' ).delay(700).animate({"left":left_dist}, "slow");
             open = true;
         }
         /*var string = $.trim($(this).text());*/
@@ -35,9 +37,12 @@ $(function() {
     });
     
     $('.dv-home').click(function(){
+        var left_dist = "-=300";
         if(open){
-            $('#sb-container').css("left","0%");
+            //$('#sb-container').css("left","0%");
+            $( '#sb-container' ).delay(700).animate({"left":left_dist}, "slow");
             open = false;
         }
     });
+    
 });
