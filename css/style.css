@@ -138,7 +138,7 @@
 }
 
 .sb-container div:last-child h5{
-	font-size: 50px;
+	font-size: 39px;
 	white-space: nowrap;
 	text-align: left;
 	margin: 0;
@@ -233,7 +233,7 @@ span.sb-icon:before {
 .icon-camera:before { /*content: '\33';*/content: 's'; } /* '3' */
 
 .logo-container img{
-    width: 350px;
+    width: 400px;
 }
 
 .section{
@@ -272,4 +272,17 @@ span.sb-icon:before {
     overflow: hidden;
     padding: 5px 20px;
     /*display: none;*/
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:rgba(22, 22, 22, 0.35);
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px;
+    z-index: 10;
+    /*font-family: 'helvetica neue', helvetica, "arial", "droid sans", "sans-serif";*/
 }
