@@ -6,6 +6,17 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'Progreso';
+    src: url('../fonts/progreso-condensed-webfont.eot');
+    src: url('../fonts/progreso-condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/progreso-condensed-webfont.woff') format('woff'),
+         url('../fonts/progreso-condensed-webfont.ttf') format('truetype'),
+         url('../fonts/progreso-condensed-webfont.svg#ProgresoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *:after,
 *:before {
