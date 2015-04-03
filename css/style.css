@@ -293,3 +293,17 @@ a:link    { color: #87b11d }  /* unvisited links */
 a:visited { color: #cccccc }  /* visited links   */
 a:hover   { color: #f89322 }  /* user hovers     */
 a:active  { color: #ffffff }  /* active links    */
+
+.col{
+    float: left;
+    font-size: 14px;
+}
+
+.map{
+    vertical-align: middle;
+}
+
+.map img{
+    width: 285px;
+    border-radius: 5px;
+}
