@@ -18,12 +18,15 @@ $(function() {
     $( '.dv-about' ).click(function(){
         var left_dist = "+=650";
         if(open && !about){
+            $( '.main' ).css('height','780px');
             display_none();
             $( '.text-content-about' ).css('display','block');
             $( '.text-content-about' ).delay(1300).animate({"opacity": '1'}, "slow");
             about = true; register = false; news = false; contact = false;
         }
         else if(!open){
+            // change window size
+            $( '.main' ).css('height','780px');
             // hide text-content span
             $( '.text-content' ).css('opacity', '0');
             // expand the div
@@ -47,12 +50,14 @@ $(function() {
     $( '.dv-register' ).click(function(){
         var left_dist = "+=650";
         if(open && !register){
+            $( '.main' ).css('height','720px');
             display_none();
             $( '.text-content-register' ).css('display','block');
             $( '.text-content-register' ).delay(1300).animate({"opacity": '1'}, "slow");
             register = true; about = false; news = false; contact = false;
         }
         else if(!open){
+            $( '.main' ).css('height','720px');
             $( '.text-content' ).css('opacity', '0');
             $( '.content' ).delay(700).animate({"width":left_dist}, "slow");
             $( '.text-content-register' ).css('display','block');
@@ -69,12 +74,14 @@ $(function() {
     $( '.dv-news' ).click(function(){
         var left_dist = "+=650";
         if(open && !register){
+            $( '.main' ).css('height','510px');
             display_none();
             $( '.text-content-news' ).css('display','block');
             $( '.text-content-news' ).delay(1300).animate({"opacity": '1'}, "slow");
             news = true; about = false; register = false; contact = false;
         }
         else if(!open){
+            $( '.main' ).css('height','510px');
             $( '.text-content' ).css('opacity', '0');
             $( '.content' ).delay(700).animate({"width":left_dist}, "slow");
             $( '.text-content-news' ).css('display','block');
@@ -91,12 +98,14 @@ $(function() {
     $( '.dv-contact' ).click(function(){
         var left_dist = "+=650";
         if(open && !register){
+            $( '.main' ).css('height','675px');
             display_none();
             $( '.text-content-contact' ).css('display','block');
             $( '.text-content-contact' ).delay(1300).animate({"opacity": '1'}, "slow");
             news = false; about = false; register = false; contact = true;
         }
         else if(!open){
+            $( '.main' ).css('height','675px');
             $( '.text-content' ).css('opacity', '0');
             $( '.content' ).delay(700).animate({"width":left_dist}, "slow");
             $( '.text-content-contact' ).css('display','block');
@@ -119,11 +128,18 @@ $(function() {
             $( '#sb-container > .dv-nav').each(function () { 
                 $(this).delay(100).animate({"opacity": '1'}, "slow");
             });
+            $( '.main' ).css('height','510px');
             // book closed
             open = false;
         }
     });
-
+    
+    // normal nav
+    $( '.dv-home' ).click(function(){
+        var height_new = $('.main').height()+50;
+        $( '.main' ).css('height',height_new.toString+'px');
+    });
+    
     $(".dv-nav-h").hover(
         function() {
             if(open) $(this).animate({opacity: 8.0}, 100);
