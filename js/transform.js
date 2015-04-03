@@ -19,6 +19,7 @@ $(function() {
             $( '.text-content' ).css('opacity', '0');
             $( '.content' ).delay(700).animate({"width":left_dist}, "slow");
             $( '.text-content' ).delay(1300).animate({"opacity": '1'}, "slow");
+            $( '#sb-container' ).delay(1000).animate({"opacity": '0.5'}, "slow");
             open = true;
         }
         
@@ -29,6 +30,7 @@ $(function() {
         if(open){
             $( '.content' ).delay(700).animate({"width":left_dist}, "slow");
             $( '.text-content' ).fadeTo("slow","0.0");
+            $( '#sb-container' ).delay(1000).animate({"opacity": '1'}, "slow");
             open = false;
         }
     });
