@@ -415,3 +415,20 @@ li a:hover{
     padding: 5px 20px;
     /*display: none;*/
 }
+
+.timeline .stream{
+    direction: rtl;   
+}
+
+.h-feed{
+    direction: ltr;   
+}
+
+#twitter-widget-0{
+    background-color: transparent !important;
+    width: 100% !important;
+}
+
+.text-content-news .twitter-timeline .twitter-timeline-rendered{
+    width: 100%;   
+}
