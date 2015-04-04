@@ -72,7 +72,7 @@ $(function() {
     // news handler
     $( '.dv-news' ).click(function(){
         var left_dist = "+=650";
-        if(open && !register){
+        if(open && !news){
             $( '.main' ).css('height','510px');
             display_none();
             $( '.text-content-news' ).css('display','block');
@@ -96,7 +96,7 @@ $(function() {
     // contact handler
     $( '.dv-contact' ).click(function(){
         var left_dist = "+=650";
-        if(open && !register){
+        if(open && !contact){
             $( '.main' ).css('height','675px');
             display_none();
             $( '.text-content-contact' ).css('display','block');
