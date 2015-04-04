@@ -34,8 +34,7 @@ $(function() {
             // appear about span
             $( '.text-content-about' ).css('display','block');
             // show about content text
-            $( '.text-content-about' ).delay(1300).animate({"opacity": '1'}, "slow");
-            
+            $( '.text-content-about' ).delay(1300).animate({"opacity": '1'}, "slow");           
             // change opacity of swatchbook
             swatchbook_opac();
             // book opened
