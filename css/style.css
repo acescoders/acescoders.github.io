@@ -351,8 +351,8 @@ nav a{
 }
 .social-media li a {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     overflow: hidden;
     margin: 0px 0.5em;
     background-repeat: no-repeat;
@@ -365,4 +365,53 @@ nav a{
 
 li a:hover{
     background-position: bottom;
+}
+
+.registration-doc a span{
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+    background-image: url(../images/icon_word.png);
+    background-position: top;
+    background-size: cover;
+    margin: 10px 0px -10px;
+}
+
+.registration-doc a:hover span{
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+    background-image: url(../images/icon_word.png);
+    background-position: bottom;
+    background-size: cover;
+    margin: 10px 0px -10px;
+}
+
+.rules-doc a span{
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+    background-image: url(../images/icon_pdf.png);
+    background-position: top;
+    background-size: cover;
+    margin: 10px 0px -10px;
+}
+
+.rules-doc a:hover span{
+    display: inline-block;
+    width: 40px;
+    height: 36px;
+    background-image: url(../images/icon_pdf.png);
+    background-position: bottom;
+    background-size: cover;
+    margin: 10px 0px -10px;
+}
+
+.section .text-content-register div{
+    float: left;
+    font-size: 11pt;
+    text-align: left;
+    overflow: hidden;
+    padding: 5px 20px;
+    /*display: none;*/
 }
